@@ -1,6 +1,6 @@
 #!/bin/bash
 current_path=`pwd`
-echo -e "Welcome to PornHUB Downloader"
+echo -e "Welcome to PornHUB Downloader 1.0"
 echo -e "this script installing downloader script this path `pwd`"
 echo -e " "
 echo -e "Do you want install now ? [Y/N]"
