@@ -2,10 +2,10 @@
 # Realse 1.2.0
 support xvideos, xhamster
 
-[xHamster]
+[xHamster]<br />
 Example : #> ./pornhub-dl 'https://xhamster.com/videos/korean-cute-amateur-couple-blowjob-and-sex-4085044' '16' 'videos'
 
-[XVIDEOS]
+[XVIDEOS]<br />
 xample : #> ./pornhub-dl 'https://www.xvideos.com/video36267153/forbidden_scandal_sex._real_korean_mom_son_webcam_hardcore_sex' '16' 'videos'
 
 ## Packages
