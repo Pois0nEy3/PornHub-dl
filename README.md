@@ -9,8 +9,8 @@ Wget - pornhub video page download
 Aria2c - Download videos for thread
 </pre>
 
-## Usage
-running setup script (ex : ./setup_pornhub.sh)
+## Install
+running setup script (ex : ./setup.sh)
 
 type command line
 <pre>
@@ -19,6 +19,43 @@ type command line
 # > chmod +x setup.sh
 # > ./setup.sh
 </pre>
+
+install Display
+<pre>
+# ./setup.sh 
+Welcome to PornHUB Downloader
+this script installing downloader script this path /mnt/shell/testfolder/PornHub-dl
+ 
+Do you want install now ? [Y/N]
+y
+ 
+[Create Folders]
+tmp Folder check
+ - /mnt/shell/testfolder/PornHub-dl/tmp/ : OK
+functions Folder check
+ - /mnt/shell/testfolder/PornHub-dl/functions/ : OK
+include Folder check
+ - /mnt/shell/testfolder/PornHub-dl/include/ : OK
+ 
+Create Header file
+Create Function files
+Create Main Script file
++ complete !
+ 
+HOW TO USE ?
+step 1. you can see current directory
+functions  include  pornhub-dl	README.md  setup.sh  tmp
+don't touch Functions, include folder.
+step 2. run script #> ./pornhub-dl 'URL' 'Thread' 'video save folder path'
+- example #> ./pornhub-dl 'https://www.pornhub.com/view_video.php?viewkey=ph5cbbe2d31d8a2' '16' '~/videos
+step 3. Enjoy fap
+ 
+P.S Thread max 16 count, write save folder
+ 
+#
+</pre>
+
+## Usage
 
 than finished install
 <pre>

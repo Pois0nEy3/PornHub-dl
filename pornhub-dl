@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#remove temp files
+rm -rf ./tmp/*
+
+#get params
+global_options="${1}"
+global_thread="${2}"
+global_path="${3}"
+
+#include
+source ./include/variables.h
+
+#functions
+source ./functions/fnc_choose_video.fnc
+source ./functions/fnc_download_webpage.fnc
+source ./functions/fnc_parse_video.fnc
+source ./functions/fnc_choose_video.fnc
+source ./functions/fnc_download_video.fnc
+
+echo -e "\e[1;35mWelcome to PornHUB Downloader script\e[0m"
+
+#running processing functions
+fnc_download_webpage
+fnc_parse_video
+fnc_choose_video
+
+#Showing download lists
+array_number="1"
+echo -e "\e[1;37m----------------------------------------------\e[0m"
+echo -e "\e[1;37m|               Choose ur Videos             |\e[0m"
+echo -e "\e[1;37m----------------------------------------------\e[0m"
+while IFS='|' read lists urls
+do
+echo -e "\e[1;32m${array_number}.${lists}.mp4"
+    choose_file[$array_number]=$lists
+    array_number=$(( array_number + 1 ))
+done < ${global_var_temp_list}
+echo -e "\e[1;37m----------------------------------------------\e[0m"
+echo " "
+read -p "Select Video number : " choose_a_file
+global_download_filename=`cat ${global_var_temp_list} | grep -a "${choose_file[$choose_a_file]}" | cut -d"|" -f1`
+global_download_url=`cat ${global_var_temp_list} | grep -a "${choose_file[$choose_a_file]}" | cut -d"|" -f2`
+fnc_download_video "${global_download_url}" "${global_download_filename}.mp4"
