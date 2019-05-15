@@ -20,14 +20,16 @@ type command line
 # > ./setup.sh
 </pre>
 
-You can call it via command-line. It supports the following flags:
+than finished install
+<pre>
+# > pornhub-dl 'URL' 'download Thread max 16' 'save folder'
+</pre>
 
-|Flag|Default|Description|
-|----|-------|-----------|
-|url|"empty"|URL of the video to download|
-|quality|"highest"|The quality number (eg. 720) or 'highest'|
-|threads|10|The amount of simultaneous download streams|
-
+Example
+<pre>
+# > mkdir videos
+# > pornhub-dl 'https://www.pornhub.com/view_video.php?viewkey=ph5cbbe2d31d8a2' '16' 'videos'
+</pre>
 
 ## Contribution
 Contributions of any kind such as refactorings with explanations or adding new features are appreciated.
